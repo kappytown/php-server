@@ -7,5 +7,6 @@
 	define('CONF_DIR', 			ROOT_DIR 	. 'conf' 		. DS);
 	define('CONTROLLERS_DIR', 	ROOT_DIR 	. 'controllers' . DS);
 	define('LOGS_DIR', 			ROOT_DIR 	. 'tmp' 		. DS . 'logs' . DS);
-	
+
+	define('UPLOAD_MAX_SIZE', 	5 * 1024 * 1024);	// 5MB limit
 	define('API_PATH',			'/php-server/api/v1');

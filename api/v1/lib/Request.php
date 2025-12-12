@@ -86,10 +86,9 @@
 				return;
 			}
 
-			$maxBodySize 	= 1024 * 1024; // Limit body size to 1MB to prevent DOS attacks
-			$rawBody 		= file_get_contents('php://input');
+			$rawBody = file_get_contents('php://input');
 			
-			if (strlen($rawBody) > $maxBodySize) {
+			if (strlen($rawBody) > UPLOAD_MAX_SIZE) {
 				throw new Exception('Request body too large');
 			}
 
